@@ -15,7 +15,7 @@ class Cliente implements Runnable {
     public void run() {
         try {
             for (String producto : productos) {
-                caja.procesarProducto(nombre, producto);  // Pasar producto a la caja
+                caja.procesarProducto(nombre, producto);
             }
         } catch (InterruptedException e) {
             e.printStackTrace();
